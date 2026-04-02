@@ -6,7 +6,7 @@ registry:
     description: Up-to-date, version-specific library documentation MCP server from Context7.
     title: Context7 MCP
     type: server
-    image: context7-mcp:latest
+    image: barracuda83/mcp:context7-mcp
     ref: ""
     source: https://github.com/upstash/context7
     upstream: https://github.com/upstash/context7/tree/main/packages/mcp
