@@ -1,0 +1,32 @@
+version: 3
+name: context7-mcp
+displayName: Context7 MCP
+registry:
+  context7-mcp:
+    description: Up-to-date, version-specific library documentation MCP server from Context7.
+    title: Context7 MCP
+    type: server
+    image: context7-mcp:latest
+    ref: ""
+    source: https://github.com/upstash/context7
+    upstream: https://github.com/upstash/context7/tree/main/packages/mcp
+    icon: https://context7.com/favicon.ico
+    tools:
+      - name: resolve-library-id
+      - name: get-library-docs
+    secrets:
+      - name: context7-mcp.api_key
+        env: CONTEXT7_API_KEY
+        example: c7_xxx
+        description: Optional Context7 API key for higher rate limits and private repositories.
+    disableNetwork: false
+    prompts: 0
+    resources: {}
+    metadata:
+      category: documentation
+      tags:
+        - docs
+        - libraries
+        - api
+        - search
+      owner: upstash

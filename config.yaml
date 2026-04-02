@@ -1,0 +1,3 @@
+# No non-secret runtime config is required for context7-mcp.
+# Optional authentication should be provided through Docker MCP secrets
+# using CONTEXT7_API_KEY.
